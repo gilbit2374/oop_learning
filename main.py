@@ -39,3 +39,4 @@ class ColoredInt(int):
         color = color_map.get(self, "")
         base_repr = int.__repr__(self)
         return f"{color}{base_repr}{reset}"
+print(ColoredInt(1))
